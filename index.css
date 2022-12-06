@@ -1,0 +1,201 @@
+/* font-family: 'Inter', sans-serif;
+font-family: 'Red Hat Display', sans-serif; */
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-image: url("./images/pattern-background-desktop.svg");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-color: rgb(224, 232, 255);
+}
+
+main{
+    width: 450px;
+    height: 83vh;
+    margin: 5em auto;
+    text-align: left;
+}
+
+main>div{
+    width: 450px;
+    height: 250px;
+}
+main>div img{
+    border-radius: 20px 20px 0px 0px;
+}
+
+#hero-detail{ 
+    height: 420px;
+    width: 390.2px;
+    background-color: rgb(255, 255, 255);
+    text-align: center;
+    border-radius: 0px 0px 25px 25px;
+    margin-bottom: 50px;
+    padding: 30px;
+}
+
+
+#hero-detail article:nth-child(1){
+    font-family: 'Inter', sans-serif;
+    width: 100%;
+}
+
+#hero-detail article:nth-child(1) p{
+    display: inline-block;
+    color: hsl(224, 23%, 55%);
+    line-height: 170%;
+}
+#hero-detail article:nth-child(1) h1{
+    font-size: 28px;
+    color: hsl(223, 47%, 23%) ;
+    margin: 20px 0px ;
+}
+
+#hero-detail article:nth-child(2){
+    width: 80%;
+    height: 50px;
+    background-color: rgb(248, 249, 254);
+    display: inline-block;
+    padding: 25px;
+    border-radius: 20px ;
+    margin-top: 25px;
+    font-family: 'Red Hat Display', sans-serif;
+}
+
+#hero-detail article:nth-child(2) div{
+    display: flex;
+    gap: 15px;
+    float: left;
+}
+
+#hero-detail article:nth-child(2) div p{
+    line-height: 150%;
+}
+
+#hero-detail article:nth-child(2) div:last-child{
+    display: inline-flex;
+    float: right;
+    margin-right: 10px;
+    margin-top: 15px;
+
+}
+
+#hero-detail article:nth-child(2) div:last-child a{
+    font-weight: 700;
+}
+
+#hero-detail article:nth-child(2) div:last-child a:hover{
+    text-decoration: none;
+    color: rgb(126, 121, 219);
+}
+
+.plan{
+    color: hsl(223, 47%, 23%);
+    font-weight: 700;
+}
+
+.price-ratio{
+    color: hsl(224, 23%, 55%);
+    font-weight: 500;
+}
+
+#hero-detail article:nth-child(3) div{
+    width: 80%;
+    height: 22px;
+    background-color: hsl(245, 75%, 52%);
+    display: inline-block;
+    padding: 15px 25px;
+    border-radius: 15px;
+    margin: 28px 0px 40px 0px;
+    box-shadow: 0px 10px 30px 1px hsl(245, 36%, 75%);
+}
+
+#hero-detail article:nth-child(3) a{
+    text-decoration: none;
+    font-family: 'Red Hat Display', sans-serif;
+    font-weight: 800;
+}
+
+#hero-detail article:nth-child(3) div a:first-child{
+    color: hsl(225, 100%, 94%);  
+}
+
+#hero-detail article:nth-child(3) a:last-child{
+    color: hsl(224, 23%, 55%);
+}
+
+#hero-detail article:nth-child(3) div:first-child:hover{
+    background-color: rgb(118, 108, 241);
+}
+
+#hero-detail article:nth-child(3) div:first-child:hover a{
+    color: hsl(225, 100%, 94%);  
+}
+
+
+#hero-detail article:nth-child(3) a:last-child:hover{
+    color: hsl(223, 47%, 23%);
+}
+
+
+footer{
+    display: inline-block;
+    color: hsl(230, 17%, 66%);
+    text-align: right;
+    margin: 0px 3em;
+}
+
+footer a{
+    text-decoration: none;
+    color: hsl(231, 9%, 48%);
+}
+
+  @media only screen and (max-width: 810px) {
+    body{
+        background-image: url("./images/pattern-background-mobile.svg");
+        background-repeat:no-repeat;
+        background-size: contain;
+        background-color: rgb(224, 232, 255);
+    }
+    main{
+        width: 400px;
+        font-size: 80%;
+    }
+
+    main>div, main>div img {
+        width: 400px;
+        height: 190px;
+    }
+   
+
+    #hero-detail{
+        width: 340px;
+        height: 420px;
+        
+    }
+  }
+
+@media only screen and (max-width: 450px) {
+
+    main{
+        width: 350px;
+        font-size: 80%;
+    }
+
+    main>div, main>div img{
+        width: 350px;
+        height: 150px;
+    }
+   
+
+    #hero-detail{
+        width: 290.2px;
+        height: 420px;
+        
+    }
+  }
+
